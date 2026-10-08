@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow & Grace Beauty Parlour & Salon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Glow & Grace Salon</h1>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#enquiry">Book Enquiry</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Enhance Your Natural Beauty</h2>
+        <p>Professional Hair, Skin & Makeup Services</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Hair Styling</h3>
+                <p>Haircuts, Spa, and Hair Coloring.</p>
+            </div>
+            <div class="service-card">
+                <h3>Skin Care</h3>
+                <p>Facials, Clean-ups, and Glow treatments.</p>
+            </div>
+            <div class="service-card">
+                <h3>Bridal Makeup</h3>
+                <p>Traditional and Modern Makeup packages.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enquiry Form Section -->
+    <section class="enquiry-section" id="enquiry">
+        <div class="form-container">
+            <h2>Enquiry Form</h2>
+            <form id="enquiryForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Select Service</label>
+                    <select id="service" required>
+                        <option value="">-- Select Service --</option>
+                        <option value="Hair Styling">Hair Styling</option>
+                        <option value="Skin Care">Skin Care</option>
+                        <option value="Bridal Makeup">Bridal Makeup</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="3" placeholder="Additional details..."></textarea>
+                </div>
+
+                <div class="btn-group">
+                    <button type="button" class="btn btn-email" onclick="sendEmail()">Send to Email</button>
+                    <button type="button" class="btn btn-whatsapp" onclick="sendWhatsApp()">Send to WhatsApp</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Beauty Salon. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript File Link -->
+    <script src="script.js"></script>
+</body>
+</html>
